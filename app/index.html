@@ -11,37 +11,40 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <div class="logotype-container"><a class="logotype-link">Геймс Маркет</a></div>
-      <nav class="main-navigation">
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="#" class="nav-list__item__link">Главная</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item__link">Мои заказы</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item__link">Новости</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item__link">О компании</a></li>
-        </ul>
-      </nav>
-      <div class="header-contact">
-        <div class="header-contact__phone"><a href="#" class="header-contact__phone-link">Телефон: 33-333-33</a></div>
-      </div>
-      <div class="header-container">
-        <div class="payment-container">
-          <div class="payment-basket"><a class="payment-basket__link"><i class="fa fa-shopping-basket"></i></a>
-            <div class="payment-basket__status">о товаров</div>
-          </div>
+      <header class="main-header">
+        <div class="logotype-container"><a class="logotype-link"><img src="img/logo.png" alt="Логотип"></a></div>
+        <nav class="main-navigation">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#" class="nav-list__item__link">Главная</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item__link">Мои заказы</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item__link">Новости</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item__link">О компании</a></li>
+          </ul>
+        </nav>
+        <div class="header-contact">
+          <div class="header-contact__phone"><a href="#" class="header-contact__phone-link">Телефон: 33-333-33</a></div>
         </div>
-        <div class="authorization-block"><a href="#" class="authorization-block__link">Регистрация</a><a href="#" class="authorization-block__link">Войти</a></div>
-      </div>
+        <div class="header-container">
+          <div class="payment-container">
+            <div class="payment-basket__status">
+              <div class="payment-basket__status__icon-block"><a class="payment-basket__status__icon-block__link"><i class="fa fa-shopping-basket"></i></a></div>
+              <div class="payment-basket__status__basket"><span class="payment-basket__status__basket-value">0</span><span class="payment-basket__status__basket-value-descr">товаров</span></div>
+            </div>
+          </div>
+          <div class="authorization-block"><a href="#" class="authorization-block__link">Регистрация</a><a href="#" class="authorization-block__link">Войти</a></div>
+        </div>
+      </header>
       <div class="middle">
         <div class="sidebar">
           <div class="sidebar-item">
             <div class="sidebar-item__title">Категории</div>
             <div class="sidebar-item__content">
               <ul class="sidebar-category">
-                <li class="sidebar-category__item"><a class="sidebar-category__item__link">Action</a></li>
-                <li class="sidebar-category__item"><a class="sidebar-category__item__link">RPG</a></li>
-                <li class="sidebar-category__item"><a class="sidebar-category__item__link">Квесты</a></li>
-                <li class="sidebar-category__item"><a class="sidebar-category__item__link">Онлайн-игры</a></li>
-                <li class="sidebar-category__item"><a class="sidebar-category__item__link">Стратегии</a></li>
+                <li class="sidebar-category__item"><a href="#" class="sidebar-category__item__link">Action</a></li>
+                <li class="sidebar-category__item"><a href="#" class="sidebar-category__item__link">RPG</a></li>
+                <li class="sidebar-category__item"><a href="#" class="sidebar-category__item__link">Квесты</a></li>
+                <li class="sidebar-category__item"><a href="#" class="sidebar-category__item__link">Онлайн-игры</a></li>
+                <li class="sidebar-category__item"><a href="#" class="sidebar-category__item__link">Стратегии</a></li>
               </ul>
             </div>
           </div>
@@ -50,16 +53,16 @@
             <div class="sidebar-item__content">
               <div class="sidebar-news">
                 <div class="sidebar-news__item">
-                  <div class="sidebar-new__item__preview-new"><img src="" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
-                  <div class="sidebar-new__item__title-new">О новых играх в режиме VR</div>
+                  <div class="sidebar-news__item__preview-news"><img src="img/cover/game-2.jpg" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
+                  <div class="sidebar-news__item__title-news"><a href="#" class="sidebar-news__item__title-news__link">О новых играх в режиме VR</a></div>
                 </div>
                 <div class="sidebar-news__item">
-                  <div class="sidebar-new__item__preview-new"><img src="" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
-                  <div class="sidebar-new__item__title-new">О новых играх в режиме VR</div>
+                  <div class="sidebar-news__item__preview-news"><img src="img/cover/game-1.jpg" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
+                  <div class="sidebar-news__item__title-news"><a href="#" class="sidebar-news__item__title-news__link">О новых играх в режиме VR</a></div>
                 </div>
                 <div class="sidebar-news__item">
-                  <div class="sidebar-new__item__preview-new"><img src="" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
-                  <div class="sidebar-new__item__title-new">О новых играх в режиме VR</div>
+                  <div class="sidebar-news__item__preview-news"><img src="img/cover/game-4.jpg" alt="image-new" class="sidebar-new__item__preview-new__image"></div>
+                  <div class="sidebar-news__item__title-news"><a href="#" class="sidebar-news__item__title-news__link">О новых играх в режиме VR</a></div>
                 </div>
               </div>
             </div>
@@ -68,12 +71,12 @@
         <div class="main-content">
           <div class="content-top">
             <h3 class="title">Купить игры неборого без регистрации смс с торента, получить компкт диск, скачать Steam игры после оплаты</h3>
-            <div class="image-container"><img src="" alt="Image" class="image-main"></div>
+            <div class="slider"><img src="img/slider.png" alt="Image" class="image-main"></div>
           </div>
           <div class="content-middle">
             <div class="content-head__container">
               <div class="content-head__title-wrap">
-                <h1 class="content-head__title">Последние товары</h1>
+                <div class="content-head__title-wrap__title">Последние товары</div>
               </div>
               <div class="content-head__search-block">
                 <div class="search-container">
@@ -85,84 +88,52 @@
               </div>
             </div>
             <div class="content-main__container">
-              <div class="products-columns__list">
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-column__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-column__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-                <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn btn-blue">Купить</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content-bottom">
-            <div class="content-head__container">
-              <div class="content-head__title-wrap">
-                <h1 class="content-head__title">Посмотрите наши товары</h1>
-              </div>
-            </div>
-            <div class="content-main__container">
               <div class="products-columns">
                 <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn-product-buy">Купить</a></div>
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-1.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
                 </div>
                 <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-column__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn-product-buy">Купить</a></div>
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-2.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
                 </div>
                 <div class="products-columns__item">
-                  <div class="products-columns__item__title-product">
-                    <h4>Super Mario</h4>
-                  </div>
-                  <div class="products-columns__item__thumbnail"><img src="http://placehold.it/320x180" alt="Preview-image"></div>
-                  <div class="products-columns__item__description"><span class="products-price">400 руб.</span><a href="#" class="btn-product-buy">Купить</a></div>
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-3.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
+                </div>
+                <div class="products-columns__item">
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-4.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
+                </div>
+                <div class="products-columns__item">
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-5.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
+                </div>
+                <div class="products-columns__item">
+                  <div class="products-columns__item__title-product"><a href="#" class="products-columns__item__title-product__link">Super Mario</a></div>
+                  <div class="products-columns__item__thumbnail"><img src="img/cover/game-6.jpg" alt="Preview-image"></div>
+                  <div class="products-columns__item__description"><span class="products-price">400 руб</span><a href="#" class="btn btn-blue">Купить</a></div>
                 </div>
               </div>
             </div>
+            <div class="content-footer__container">
+              <ul class="page-nav">
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link"><i class="fa fa-angle-double-left"></i></a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link">1</a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link">2</a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link">3</a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link">4</a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link">5</a></li>
+                <li class="page-nav__item"><a href="#" class="page-nav__item__link"><i class="fa fa-angle-double-right"></i></a></li>
+              </ul>
+            </div>
           </div>
+          <div class="content-bottom"></div>
         </div>
       </div>
       <footer class="footer"></footer>

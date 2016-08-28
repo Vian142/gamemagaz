@@ -1,6 +1,6 @@
 .content-head__container
     .content-head__title-wrap
-        h1.content-head__title
+       .content-head__title-wrap__title
             | Последние товары
     .content-head__search-block
         .search-container
@@ -9,69 +9,72 @@
                 button.search-container__form__btn
                     | search
 .content-main__container
-    .products-columns__list
+    .products-columns
         .products-columns__item
             .products-columns__item__title-product
-                h4 Super Mario
+                a(href="#").products-columns__item__title-product__link
+                        | Super Mario
             .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
+                img(src='img/cover/game-1.jpg', alt="Preview-image")
             .products-columns__item__description
                 span.products-price
-                    | 400 руб.
+                    | 400 руб
                 a(href="#").btn.btn-blue
                     | Купить
-
         .products-columns__item
             .products-columns__item__title-product
-                h4 Super Mario
+                a(href="#").products-columns__item__title-product__link
+                    | Super Mario
             .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
-            .products-column__item__description
-                span.products-price
-                    | 400 руб.
-                a(href="#").btn.btn-blue
-                    | Купить
-
-        .products-columns__item
-            .products-columns__item__title-product
-                h4 Super Mario
-            .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
+                img(src='img/cover/game-2.jpg', alt="Preview-image")
             .products-columns__item__description
                 span.products-price
-                    | 400 руб.
+                    | 400 руб
                 a(href="#").btn.btn-blue
                     | Купить
-
         .products-columns__item
             .products-columns__item__title-product
-                h4 Super Mario
+                a(href="#").products-columns__item__title-product__link
+                    | Super Mario
             .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
+                img(src='img/cover/game-3.jpg', alt="Preview-image")
             .products-columns__item__description
                 span.products-price
-                    | 400 руб.
+                    | 400 руб
                 a(href="#").btn.btn-blue
                     | Купить
-
         .products-columns__item
             .products-columns__item__title-product
-                h4 Super Mario
+                a(href="#").products-columns__item__title-product__link
+                    | Super Mario
             .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
-            .products-column__item__description
-                span.products-price
-                    | 400 руб.
-                a(href="#").btn.btn-blue
-                    | Купить
-
-        .products-columns__item
-            .products-columns__item__title-product
-                h4 Super Mario
-            .products-columns__item__thumbnail
-                img(src='http://placehold.it/320x180', alt="Preview-image")
+                img(src='img/cover/game-4.jpg', alt="Preview-image")
             .products-columns__item__description
                 span.products-price
-                    | 400 руб.
+                    | 400 руб
                 a(href="#").btn.btn-blue
                     | Купить
+        .products-columns__item
+            .products-columns__item__title-product
+                a(href="#").products-columns__item__title-product__link
+                    | Super Mario
+            .products-columns__item__thumbnail
+                img(src='img/cover/game-5.jpg', alt="Preview-image")
+            .products-columns__item__description
+                span.products-price
+                    | 400 руб
+                a(href="#").btn.btn-blue
+                    | Купить
+        .products-columns__item
+            .products-columns__item__title-product
+                a(href="#").products-columns__item__title-product__link
+                    | Super Mario
+            .products-columns__item__thumbnail
+                img(src='img/cover/game-6.jpg', alt="Preview-image")
+            .products-columns__item__description
+                span.products-price
+                    | 400 руб
+                a(href="#").btn.btn-blue
+                    | Купить
+.content-footer__container
+    include ../pagination
