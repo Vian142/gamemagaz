@@ -80,11 +80,25 @@
   }
 }
 
+/* content-text style */
+.content-text{
+
+  p{
+      font-size: 1.071rem;
+      font-family: "PT_Sans";
+      color: rgb(0, 0, 0);
+      line-height: 1.667rem;
+    font-weight: normal;
+  }
+}
+
+
+
 .products-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 45px 0 20px;
+  padding: 15px 0 20px;
   &__item {
     flex: 1 1 30%;
     max-width: 250px;
@@ -117,6 +131,19 @@
   }
 }
 
+/* Image style */
+
+.img-news{
+  max-width: 300px;
+}
+
+.content-text__title{
+    font-size: 1.857rem;
+    font-family: "PT_Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.857rem;
+}
 
 .content-footer__container{
   display: flex;
