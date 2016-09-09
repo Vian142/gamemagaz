@@ -1,20 +1,23 @@
 @import '_parts/font.scss';
 
-body{
+body {
   background-color: #436b39;
   background-image: url(../img/bg_main.png);
-  background-repeat:  no-repeat;
-  padding-top: 30px;
+  background-repeat: no-repeat;
+  padding: 50px 0;
 }
 
-html{
+html {
   font-size: 14px;
 }
-img{
+
+img {
   max-width: 100%;
+  height: auto;
 }
+
 /* main wrapper page*/
-.main-wrapper{
+.main-wrapper {
   width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -24,22 +27,35 @@ img{
 @import '_parts/header.scss';
 
 /* middle block page */
-.middle{
+.middle {
   background-color: rgb(253, 253, 240);
   padding: 0 57px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.sidebar{
+
+.sidebar {
   flex: 0 0 190px;
+  padding: 45px 0 5px;
 }
+
 @import '_parts/sidebar.scss';
 
-.main-content{
+.main-content {
   flex: 0 0 800px;
+  padding: 45px 0 0;
+}
+
+.line {
+  display: block;
+  margin: 20px 0 0 10px;
+  background-color: rgb(210, 228, 215);
+  width: 100%;
+  height: 1px;
 }
 
 @import '_parts/content.scss';
 @import '_parts/pagination.scss';
 @import '_parts/wp_style.scss';
+@import '_parts/footer.scss';

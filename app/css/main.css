@@ -31,13 +31,14 @@ body {
   background-color: #436b39;
   background-image: url(../img/bg_main.png);
   background-repeat: no-repeat;
-  padding-top: 30px; }
+  padding: 50px 0; }
 
 html {
   font-size: 14px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 /* main wrapper page*/
 .main-wrapper {
@@ -162,28 +163,31 @@ img {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 190px;
       -ms-flex: 0 0 190px;
-          flex: 0 0 190px; }
+          flex: 0 0 190px;
+  padding: 45px 0 5px; }
 
-.sidebar-item__title {
-  width: 120px;
-  position: relative;
-  font-size: 1.71rem;
-  font-family: "Bebas_Neue", sans-serif;
-  color: black;
-  line-height: 1.71rem;
-  font-weight: bold;
-  padding: 10px 0;
-  z-index: 10; }
-  .sidebar-item__title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -75px;
-    height: 100%;
-    width: 210px;
-    background-color: #d0e26c;
-    z-index: -5; }
+.sidebar-item {
+  margin: 20px 0; }
+  .sidebar-item__title {
+    width: 120px;
+    position: relative;
+    font-size: 1.71rem;
+    font-family: "Bebas_Neue", sans-serif;
+    color: black;
+    line-height: 1.71rem;
+    font-weight: bold;
+    padding: 10px 0;
+    z-index: 10; }
+    .sidebar-item__title:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -75px;
+      height: 100%;
+      width: 210px;
+      background-color: #d0e26c;
+      z-index: -5; }
 
 .sidebar-category {
   padding: 0; }
@@ -191,7 +195,7 @@ img {
     list-style: none; }
     .sidebar-category__item__link {
       font-size: 1.28rem;
-      font-family: "PT_Sans";
+      font-family: "PT_Sans", sans-serif;
       font-weight: bold;
       line-height: 2.5rem;
       text-decoration: none;
@@ -220,7 +224,18 @@ img {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 800px;
       -ms-flex: 0 0 800px;
-          flex: 0 0 800px; }
+          flex: 0 0 800px;
+  padding: 45px 0 0; }
+
+.line {
+  display: block;
+  margin: 20px 0 0 10px;
+  background-color: #d2e4d7;
+  width: 100%;
+  height: 1px; }
+
+.content-main__container {
+  padding: 25px 0 10px; }
 
 .content-head__container {
   display: -webkit-box;
@@ -235,7 +250,7 @@ img {
 
 .content-head__title-wrap__title {
   font-size: 1.85rem;
-  font-family: "Bebas_Neue";
+  font-family: "Bebas_Neue", sans-serif;
   color: black;
   line-height: 1.85rem;
   font-weight: bold; }
@@ -260,7 +275,7 @@ img {
     margin: 0;
     padding: 0 5px 0 20px;
     font-size: 1rem;
-    font-family: "PT_Sans";
+    font-family: "PT_Sans", sans-serif;
     color: #a6a49b;
     line-height: 1.2rem; }
     .search-container__form__input:focus {
@@ -304,10 +319,69 @@ img {
 /* content-text style */
 .content-text p {
   font-size: 1.071rem;
-  font-family: "PT_Sans";
+  font-family: "PT_Sans", sans-serif;
   color: black;
   line-height: 1.667rem;
   font-weight: normal; }
+
+.product-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+  .product-container__image-wrap {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    padding-right: 20px;
+    max-width: 300px; }
+  .product-container__content-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 60%;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
+    padding-left: 20px; }
+    .product-container__content-text__title {
+      font-size: 26px;
+      font-family: "PT_Sans", sans-serif;
+      color: black;
+      font-weight: bold;
+      line-height: 26px;
+      padding: 0 0 10px; }
+    .product-container__content-text__price {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 8px 0;
+      border-top: 1px solid #d0e26c;
+      border-bottom: 1px solid #d0e26c; }
+      .product-container__content-text__price__value {
+        font-size: 18px;
+        font-family: "PT_Sans", sans-serif;
+        color: black;
+        line-height: 1.222;
+        font-weight: normal; }
+      .product-container__content-text__price__description {
+        padding: 25px 0 10px; }
+        .product-container__content-text__price__description p {
+          font-size: 1.071rem;
+          font-family: "PT_Sans", sans-serif;
+          color: black;
+          line-height: 1.667rem;
+          font-weight: normal; }
 
 .products-columns {
   display: -webkit-box;
@@ -320,7 +394,11 @@ img {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  padding: 15px 0 20px; }
+  padding: 15px 0 20px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
   .products-columns__item {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 30%;
@@ -336,8 +414,22 @@ img {
         font-family: "PT_Sans", sans-serif;
         color: black;
         font-weight: bold;
-        line-height: 1.1rem;
+        line-height: 1.6rem;
         text-decoration: none; }
+    .products-columns__item__thumbnail {
+      font-size: 0;
+      height: 150px;
+      overflow: hidden; }
+      .products-columns__item__thumbnail__img {
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease; }
+        .products-columns__item__thumbnail__img:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1); }
+      .products-columns__item__thumbnail__link {
+        display: block;
+        overflow: hidden; }
     .products-columns__item__description {
       display: -webkit-box;
       display: -webkit-flex;
@@ -357,6 +449,13 @@ img {
       color: black;
       font-weight: bold;
       line-height: 1.4rem; }
+
+.products-price {
+  font-size: 1.3rem;
+  font-family: "PT_Sans", sans-serif;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.4rem; }
 
 /* Image style */
 .img-news {
@@ -464,3 +563,114 @@ a img.aligncenter {
   line-height: 17px;
   margin: 0;
   padding: 0 4px 5px; }
+
+.footer {
+  background: #a28954;
+  padding: 25px 20px 0; }
+
+.footer__footer-content {
+  padding: 0 0 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* Random product in Footer*/
+.random-product-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 20%;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%; }
+
+.random-product-container__head {
+  font-size: 1.857rem;
+  font-family: "Bebas_Neue", sans-serif;
+  color: black;
+  line-height: 1.85rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.item-product {
+  max-width: 200px;
+  margin: 15px auto 10px; }
+  .item-product__title-product {
+    text-align: center; }
+    .item-product__title-product__link {
+      font-size: 1.42rem;
+      font-family: "PT_Sans", sans-serif;
+      color: black;
+      font-weight: bold;
+      line-height: 1.5rem;
+      text-decoration: none; }
+  .item-product__description__products-price {
+    font-size: 2.14rem;
+    font-family: "PT_Sans", sans-serif;
+    color: black;
+    font-weight: bold;
+    line-height: 2.3rem;
+    text-align: center; }
+  .item-product__description__btn-block {
+    text-align: center; }
+
+.footer__footer-content__main-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 75%;
+      -ms-flex: 1 1 75%;
+          flex: 1 1 75%;
+  font-size: 1.28rem;
+  font-family: "PT_Sans", sans-serif;
+  color: #fefefe;
+  line-height: 1.444rem;
+  text-align: left;
+  padding: 0 30px; }
+
+/* Social block in footer */
+.footer__social-block {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.social-block__list {
+  padding: 0 50px 0 20px;
+  margin: 0;
+  height: 33px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10; }
+  .social-block__list__item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 4px;
+    height: 30px; }
+    .social-block__list__item__link {
+      font-size: 1.85rem;
+      text-transform: uppercase;
+      line-height: 1.85rem;
+      text-align: center;
+      text-decoration: none;
+      color: #49743e; }
+      .social-block__list__item__link:hover, .social-block__list__item__link:focus {
+        color: #000; }
+
+.bcg-social:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 150%;
+  width: 130%;
+  background-color: #d0e26c;
+  z-index: -5; }

@@ -1,7 +1,7 @@
 .content-head__container
     .content-head__title-wrap
-        h1.content-head__title
-            | Supermario в разделе action
+        .content-head__title-wrap__title
+            | The Witcher 3: Wild Hunt в разделе action
     .content-head__search-block
         .search-container
             form.search-container__form
@@ -11,18 +11,17 @@
 .content-main__container
     .product-container
         .product-container__image-wrap
-            img(src="http://placehold.it/350x300").image-wrap__image-product
+            img(src="img/cover/game-1.jpg").image-wrap__image-product
         .product-container__content-text
-            .content-text__title
+            .product-container__content-text__title
                 | SuperMario
-            .content-text__price
-                | Цена:
-                span.price-value
-                    | 400
-                | руб
+            .product-container__content-text__price
+                .product-container__content-text__price__value
+                    | Цена: <b>400</b>
+                    | руб
                 a(href="#").btn.btn-blue
                     | Купить
-            .content-text__description
+            .product-container__content-text__description
                 p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

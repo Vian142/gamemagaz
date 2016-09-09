@@ -1,0 +1,122 @@
+.footer {
+  background: #a28954;
+  padding: 25px 20px 0;
+}
+
+.footer__footer-content {
+  padding: 0 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Random product in Footer*/
+.random-product-container {
+  flex: 1 1 20%;
+}
+
+.random-product-container__head {
+  font-size: 1.857rem;
+  font-family: "Bebas_Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item-product {
+  max-width: 200px;
+  margin: 15px auto 10px;
+  &__title-product {
+    text-align: center;
+    &__link {
+      font-size: 1.42rem;
+      font-family: "PT_Sans", sans-serif;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.5rem;
+      text-decoration: none;
+    }
+  }
+
+  &__thumbnail {
+    &__link {
+      &__img {
+
+      }
+    }
+  }
+
+  &__description {
+    &__products-price {
+      font-size: 2.14rem;
+      font-family: "PT_Sans", sans-serif;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 2.3rem;
+      text-align: center;
+    }
+    &__btn-block {
+      text-align: center;
+    }
+  }
+}
+
+.footer__footer-content__main-content {
+  flex: 1 1 75%;
+  font-size: 1.28rem;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(254, 254, 254);
+  line-height: 1.444rem;
+  text-align: left;
+  padding: 0 30px;
+}
+
+
+
+/* Social block in footer */
+.footer__social-block{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-block__list {
+  padding: 0 50px 0 20px;
+  margin: 0;
+  height: 33px;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 10;
+  &__item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 4px;
+    height: 30px;
+    &__link {
+      font-size: 1.85rem;
+      text-transform: uppercase;
+      line-height: 1.85rem;
+      text-align: center;
+      text-decoration: none;
+      color: #49743e;
+      &:hover,
+      &:focus{
+        color: #000;
+      }
+      i {
+
+      }
+    }
+  }
+}
+
+.bcg-social:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 150%;
+  width: 130%;
+  background-color: #d0e26c;
+  z-index: -5;
+}

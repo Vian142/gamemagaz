@@ -1,4 +1,5 @@
 .sidebar-item {
+  margin: 20px 0;
   &__title {
     width: 120px;
     position: relative;
@@ -31,7 +32,7 @@
     list-style: none;
     &__link {
       font-size: 1.28rem;
-      font-family: "PT_Sans";
+      font-family: "PT_Sans", sans-serif;
       font-weight: bold;
       line-height: 2.5rem;
       text-decoration: none;
