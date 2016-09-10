@@ -2,6 +2,23 @@
   padding: 25px 0 10px;
 }
 
+.content-top {
+  padding: 5px 0 15px;
+
+  font-size: 18px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 22px;
+  text-align: center;
+
+}
+
+.content-top__text {
+  padding: 15px 30px 10px;
+}
+
+/**/
+/* search line in middle */
 .content-head {
   &__container {
     display: flex;
@@ -10,17 +27,19 @@
     padding: 20px 0 10px;
   }
   &__title-wrap {
+    padding-left: 10px;
+    max-width: 380px;
     &__title {
-      font-size: 1.85rem;
+      font-size: 26px;
       font-family: "Bebas_Neue", sans-serif;
       color: rgb(0, 0, 0);
-      line-height: 1.85rem;
+      line-height: 28px;
       font-weight: bold;
-
     }
   }
 }
 
+/* search */
 .search-container {
   &__form {
     display: flex;
@@ -83,6 +102,11 @@
   &:focus {
     font-weight: bold;
   }
+}
+
+.btn-brown {
+  color: #fff;
+  background-color: #a28954;
 }
 
 /* content-text style */
@@ -150,7 +174,7 @@
 .products-columns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px 0 20px;
   align-items: flex-end;
   &__item {
@@ -222,6 +246,7 @@
   line-height: 1.857rem;
 }
 
+/**/
 /* cart-content */
 .cart-product-list {
   padding: 20px 0 15px;
@@ -240,7 +265,6 @@
 }
 
 .cart-product__item__product-photo {
-  max-width: 150px;
   height: 80px;
   flex: 1 1 150px;
   display: flex;
@@ -248,8 +272,8 @@
 }
 
 .cart-product__item__product-name {
-  flex: 1 1 400px;
-  padding-left: 80px;
+  flex: 1 1 350px;
+  padding-left: 50px;
   display: flex;
   align-items: center;
 
@@ -261,12 +285,10 @@
   a {
     color: inherit;
     text-decoration: none;
-
     &:focus,
     &:hover {
       text-decoration: underline;
     }
-
   }
 }
 
@@ -294,7 +316,6 @@
 
 .cart-product__item__cart-date__content {
   color: inherit;
-
 }
 
 .cart-product__item__product-price {
@@ -308,15 +329,162 @@
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 17px;
-
 }
 
 .product-price__value {
   color: inherit;
 }
 
-/* content footer*/
+/**/
+/* category list*/
+.products-category__list {
+  padding: 15px 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.products-category__list__item {
+  flex: 1 1 30%;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.products-category__list__item__title-product {
+  font-size: 20px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  padding: 3px 0 10px;
+  line-height: 22px;
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.products-category__list__item__thumbnail {
+  font-size: 0;
+  max-height: 170px;
+  overflow: hidden;
+}
+
+.products-category__list__item__thumbnail__link {
+  display: block;
+  overflow: hidden;
+
+  img {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.products-category__list__item__description {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/**/
+/* result row in list catr*/
+.cart-product-list__result-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-product-list__result-item__text {
+  width: 140px;
+  font-size: 18px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+.cart-product-list__result-item__value {
+  width: 135px;
+  font-size: 18px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+/**/
+/* List News */
+.news-list__container {
+
+}
+
+.news-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+}
+
+.news-list__item__thumbnail {
+  flex: 0 0 230px;
+  width: 230px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.news-list__item__content {
+  padding-left: 40px;
+  max-width: 550px;
+  flex: 0 0 550px;
+}
+
+.news-list__item__content__news-title {
+
+  font-size: 26px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 28px;
+  padding: 0 0 10px;
+}
+
+.news-list__item__content__news-date {
+  font-size: 18px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 20px;
+  border-bottom: 1px solid rgb(186, 214, 211);
+  padding: 10px 0 20px;
+}
+
+.news-list__item__content__news-content {
+  font-size: 15px;
+  font-family: "PT_Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  line-height: 22px;
+  padding: 20px 0 5px;
+}
+
+.news-list__item__content__news-btn-wrap {
+  flex-basis: 100%;
+  text-align: right;
+}
+
+/**/
+/* content-block footer*/
 .content-footer__container {
   display: flex;
   justify-content: flex-end;
+  padding: 15px 0 5px;
 }

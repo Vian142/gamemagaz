@@ -1,5 +1,20 @@
 .page-nav {
   padding: 10px 20px;
+  position: relative;
+  z-index: 5;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: -0%;
+    right: 10%;
+    height: 110%;
+    width: 130%;
+    background-color: rgb(208, 226, 108);
+    z-index: -5;
+  }
   &__item {
     list-style: none;
     display: inline-block;
