@@ -1,3 +1,5 @@
 node_modules/
-app/bower-libs
+app/bower-libs/
 .idea/
+
+dist/

@@ -1,6 +1,6 @@
-# Верстка GameMagaz
+# Верстка GameMagaz - макет магазина компьютерных игр.
 
-##### Установка 
+##### Установка пакетов
 ```sh
 $ npm install
 ```
@@ -14,3 +14,15 @@ $ gulp
 ```sh
 $ gulp build
 ```
+
+В проекте используется:
+ - [Normalize-css](https://necolas.github.io/normalize.css/)
+ - [FontAwesome.io](http://fontawesome.io/)
+ 
+Шрифты:
+ - Bebas Neue
+ - PT Sans
+ 
+Технологии:
+ - Jade
+ - Sass
