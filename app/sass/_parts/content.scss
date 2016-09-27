@@ -191,6 +191,11 @@
         font-weight: bold;
         line-height: 1.6rem;
         text-decoration: none;
+        transition: all 0.3s ease;
+        &:focus,
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
     &__thumbnail {

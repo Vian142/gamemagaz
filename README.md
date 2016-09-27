@@ -18,3 +18,11 @@ $ gulp build
 В проекте используется:
  - [Normalize-css](https://necolas.github.io/normalize.css/)
  - [FontAwesome.io](http://fontawesome.io/)
+ 
+Шрифты:
+ - Bebas Neue
+ - PT Sans
+ 
+Технологии:
+ - Jade
+ - Sass

@@ -141,6 +141,13 @@ img {
     width: 50%;
     font-size: 2.3rem;
     text-align: center; }
+    .payment-basket__status__icon-block__link {
+      color: inherit;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .payment-basket__status__icon-block__link:focus, .payment-basket__status__icon-block__link:hover {
+        color: #d28324; }
   .payment-basket__status__basket {
     width: 50%;
     font-size: 1rem;
@@ -523,7 +530,11 @@ img {
         color: black;
         font-weight: bold;
         line-height: 1.6rem;
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .products-columns__item__title-product__link:focus, .products-columns__item__title-product__link:hover {
+          text-decoration: underline; }
     .products-columns__item__thumbnail {
       font-size: 0;
       height: 150px;
